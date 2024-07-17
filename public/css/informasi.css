@@ -1,0 +1,11 @@
+
+
+td {
+    align-items: center; /* Pusat vertikal */
+    justify-content: center; /* Pusat horizontal */
+}
+
+td img {
+    max-width: 80%;
+    height: auto;
+}

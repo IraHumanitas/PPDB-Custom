@@ -1,0 +1,687 @@
+::-webkit-scrollbar {
+    width: 0px; /* Lebar scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(89.96deg, rgba(190, 213, 234, 0.5) 0.04%, rgba(200, 200, 200, 0.5) 44.07%);
+    opacity: 0%;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* Warna thumb scrollbar */
+    border-radius: 10px;
+    background: linear-gradient(89.96deg, rgba(190, 213, 234, 0.5) 0.04%, rgba(200, 200, 200, 0.5) 44.07%);
+}
+
+html body{
+    padding: 0;
+    margin: 0;
+    width: 100%;  
+    max-width: 100%; 
+    overflow-x: hidden;
+}
+
+/* logo */
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+.img-latar{
+    z-index: -999;
+    position: relative;
+}
+
+.all{
+    width: 100%;
+    z-index: 999;
+    position: relative;
+    margin-top: -70%;
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+}
+
+.nav .kiri{ 
+    width: 30%;
+    float: left;
+    margin-top: 1%;
+    margin-left: 2%;
+}
+
+.nav .kiri .logo-ppdbb{
+    width: 70%;
+}
+
+.nav .kiri .logo-smk1{
+    width: 17%;
+    margin-top: 0.5%;
+    margin-left: 1%;
+}
+
+.nav .kanan{
+    width: 70%;
+    float: right;
+    display: flex;
+    margin-top: 1%;
+    margin-left: 30%;
+}
+
+.kanan ul{
+    display: flex;
+    list-style: none;
+    gap: 6.5rem;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 11pt;
+    color: #6296C6;
+}
+
+.kanan ul li a{
+    font-style: normal;
+    text-decoration: none;
+    color: #6296C6;
+}
+
+.kanan ul li .beranda{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px;
+    text-align: center;
+    background: linear-gradient(265.52deg, #2C6BA7 0%, #97C3EC 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.tengah{
+    display: flex;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+}
+
+.tengah .kiri{
+    float: left;
+    margin-left: 5%;
+    width: 100%;
+}
+
+.tengah .kiri .judul, .form{
+    width: 50%;
+}
+
+.kiri .judul .masuk{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 58px;
+    background: linear-gradient(90.26deg, #555555 46.43%, #D8E2EC 79.8%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.kiri .judul .sub-judul{
+    width: 120%;
+    margin-top: -20%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.tengah .kiri .form{
+
+}
+
+input[type=text]{
+    background: linear-gradient(89.96deg, rgba(190, 213, 234, 0.5) 0.04%, rgba(200, 200, 200, 0.5) 44.07%);
+    border-radius: 14px;
+    border: 0px;
+    padding: 3% 3% 3% 15%;
+    width: 300px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 27px;
+    color: #666666;
+}
+
+input[type="text"]:focus, input[type="text"]:active {
+    background: linear-gradient(89.96deg, rgba(190, 213, 234, 0.5) 0.04%, rgba(200, 200, 200, 0.5) 44.07%);
+    color: #2C6BA7;
+    border:  none;
+    outline: none;
+}
+
+
+input[type=email]{
+    background: linear-gradient(89.96deg, rgba(190, 213, 234, 0.5) 0.04%, rgba(200, 200, 200, 0.5) 44.07%);
+    border-radius: 14px;
+    border: 0px;
+    padding: 3% 3% 3% 15%;
+    width: 300px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 27px;
+    color: #666666;
+}
+
+input[type="email"]:focus, input[type="email"]:active {
+    background: linear-gradient(89.96deg, rgba(190, 213, 234, 0.5) 0.04%, rgba(200, 200, 200, 0.5) 44.07%);
+    color: #2C6BA7;
+    border:  none;
+    outline: none;
+}
+
+input[type=password]{
+    background: linear-gradient(89.96deg, rgba(190, 213, 234, 0.5) 0.04%, rgba(200, 200, 200, 0.5) 44.07%);
+    border-radius: 14px;
+    border: 0px;
+    padding: 3% 3% 3% 15%;
+    width: 300px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 27px;
+    color: #666666;
+}
+
+input[type="password"]:focus, input[type="password"]:active, input[type="password"]:placeholder-shown {
+    background: linear-gradient(89.96deg, rgba(190, 213, 234, 0.5) 0.04%, rgba(200, 200, 200, 0.5) 44.07%);
+    color: #2C6BA7;
+    border:  none;
+    outline: none;
+}
+
+.form img{
+    position: absolute;
+    width: 2.4%;
+    margin-top: 0.6%;
+    margin-left: 0.5%;
+}
+
+.form .p{
+    display: flex;
+}
+
+.form p{
+    width: 120%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.form p .hitam{
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.form p .hitam{
+    color: rgba(23, 80, 223, 1);
+}
+
+button[type=submit]{
+    background: linear-gradient(89.96deg, rgba(47, 105, 255, 0.5) 0.04%, rgba(169, 198, 224, 0.5) 55.56%, rgba(108, 144, 176, 0.5) 108.6%);
+    border-radius: 14px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #415893;
+    border: 0px;
+    padding: 2.5%;
+    width: 27%;
+    margin-left: 90%;
+}
+
+button[type=submit]:hover{
+    background: linear-gradient(89.96deg, rgba(129, 159, 233, 0.5) 0.04%, rgba(169, 198, 224, 0.5) 55.56%, rgba(108, 144, 176, 0.5) 108.6%);
+    border-radius: 14px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #648be0;
+    border: 0px;
+    padding: 2.5%;
+    width: 27%;
+    margin-left: 90%;
+}
+
+.tengah .kanan{
+    float: right;
+    margin-top: -5%;
+}
+
+.tengah .kanan img{
+    width: 100%;
+    margin-left: -15%;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    margin-top: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+footer .kiri{
+    float: left;
+    width: 33.4%;
+    justify-content: space-between;
+}
+
+footer .kiri .ppdb{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    color: #FDFDFD;
+}
+
+footer .kiri .text{
+    margin-top: -12%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    color: #C4C5C7;
+}
+
+footer .tengah{
+    justify-content: space-between;
+    float: center;
+    margin-top: 1.5%;
+    width: 33.3%;
+    display: unset;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+footer .tengah .atas{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    color: #1C2948;
+}
+
+footer .tengah .bawah{
+    margin-top: -1.5%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    color: #1C2948;
+}
+
+footer .kanan{
+    margin-top: 3%;
+    float: right;
+    width: 33.3%;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .kanan p{
+    margin-top: -0.2%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    color: #e8f0ff;
+}
+
+
+/* Media query untuk tampilan seluler (lebar maksimum 768px) */
+@media (max-width: 768px) {
+    .img-latar{
+        opacity: 0%;
+    }
+    
+    .all{
+        width: 100%;
+        z-index: 999;
+        position: relative;
+    }
+    
+    .nav{
+        width: 100%;
+        display: inherit;
+    }
+    
+    .nav .kiri{ 
+        width: 100%;
+        margin-top: 1%;
+        margin-left: 2%;
+    }
+    
+    .nav .kiri .logo-ppdbb{
+        width: 25%;
+    }
+    
+    .nav .kiri .logo-smk1{
+        width: 8%;
+        margin-top: 0.5%;
+        margin-left: 1%;
+    }
+    
+    .nav .kanan{
+        width: 100%;
+        display: flex;
+        margin-top: 1%;
+        margin-left: 30%;
+    }
+    
+    .kanan ul{
+        display: flex;
+        list-style: none;
+        gap: 6.5rem;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 11pt;
+        color: #6296C6;
+    }
+    
+    .kanan ul li a{
+        font-style: normal;
+        text-decoration: none;
+        color: #6296C6;
+    }
+    
+    .kanan ul li .beranda{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        line-height: 21px;
+        text-align: center;
+        background: linear-gradient(265.52deg, #2C6BA7 0%, #97C3EC 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+    
+    .tengah{
+        display: flex;
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 2%;
+    }
+    
+    .tengah .kiri{
+        float: left;
+        margin-left: 5%;
+        width: 100%;
+    }
+    
+    .tengah .kiri .judul, .form{
+        width: 50%;
+    }
+    
+    .kiri .judul .masuk{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 58px;
+        background: linear-gradient(90.26deg, #555555 46.43%, #D8E2EC 79.8%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+    
+    .kiri .judul .sub-judul{
+        width: 120%;
+        margin-top: -20%;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        color: rgba(0, 0, 0, 0.75);
+    }
+    
+    .tengah .kiri .form{
+    
+    }
+    
+    input[type=text]{
+        background: linear-gradient(89.96deg, rgba(190, 213, 234, 0.5) 0.04%, rgba(200, 200, 200, 0.5) 44.07%);
+        border-radius: 14px;
+        border: 0px;
+        padding: 3% 3% 3% 15%;
+        width: 300px;
+    
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 27px;
+        color: #666666;
+    }
+    
+    input[type="text"]:focus, input[type="text"]:active {
+        background: linear-gradient(89.96deg, rgba(190, 213, 234, 0.5) 0.04%, rgba(200, 200, 200, 0.5) 44.07%);
+        color: #2C6BA7;
+        border:  none;
+        outline: none;
+    }
+    
+    input[type=password]{
+        background: linear-gradient(89.96deg, rgba(190, 213, 234, 0.5) 0.04%, rgba(200, 200, 200, 0.5) 44.07%);
+        border-radius: 14px;
+        border: 0px;
+        padding: 3% 3% 3% 15%;
+        width: 300px;
+    
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 27px;
+        color: #666666;
+    }
+    
+    input[type="password"]:focus, input[type="password"]:active, input[type="password"]:placeholder-shown {
+        background: linear-gradient(89.96deg, rgba(190, 213, 234, 0.5) 0.04%, rgba(200, 200, 200, 0.5) 44.07%);
+        color: #2C6BA7;
+        border:  none;
+        outline: none;
+    }
+    
+    .form img{
+        position: absolute;
+        width: 2.4%;
+        margin-top: 0.6%;
+        margin-left: 0.5%;
+    }
+    
+    .form .p{
+        display: flex;
+    }
+    
+    .form p{
+        width: 120%;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+    }
+    
+    .form p .hitam{
+        color: rgba(0, 0, 0, 0.75);
+    }
+    
+    .form p .hitam{
+        color: rgba(23, 80, 223, 1);
+    }
+    
+    button[type=submit]{
+        background: linear-gradient(89.96deg, rgba(47, 105, 255, 0.5) 0.04%, rgba(169, 198, 224, 0.5) 55.56%, rgba(108, 144, 176, 0.5) 108.6%);
+        border-radius: 14px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        color: #415893;
+        border: 0px;
+        padding: 2.5%;
+        width: 27%;
+        margin-left: 90%;
+    }
+    
+    button[type=submit]:hover{
+        background: linear-gradient(89.96deg, rgba(129, 159, 233, 0.5) 0.04%, rgba(169, 198, 224, 0.5) 55.56%, rgba(108, 144, 176, 0.5) 108.6%);
+        border-radius: 14px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        color: #648be0;
+        border: 0px;
+        padding: 2.5%;
+        width: 27%;
+        margin-left: 90%;
+    }
+    
+    .tengah .kanan{
+        float: right;
+        margin-top: -5%;
+    }
+    
+    .tengah .kanan img{
+        width: 100%;
+        margin-left: -15%;
+    }
+    
+    footer{
+        display: flex;
+        width: 100%;
+        margin-top: 15%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    footer .kiri{
+        float: left;
+        width: 33.4%;
+        justify-content: space-between;
+    }
+    
+    footer .kiri .ppdb{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 42px;
+        color: #FDFDFD;
+    }
+    
+    footer .kiri .text{
+        margin-top: -12%;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        color: #C4C5C7;
+    }
+    
+    footer .tengah{
+        justify-content: space-between;
+        float: center;
+        margin-top: 1.5%;
+        width: 33.3%;
+        display: unset;
+        align-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    
+    footer .tengah .atas{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        color: #1C2948;
+    }
+    
+    footer .tengah .bawah{
+        margin-top: -1.5%;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        color: #1C2948;
+    }
+    
+    footer .kanan{
+        margin-top: 3%;
+        float: right;
+        width: 33.3%;
+        align-content: center;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    footer .kanan p{
+        margin-top: -0.2%;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        color: #e8f0ff;
+    }
+  }
+  
+  /* Gaya scrollbar untuk semua tampilan */
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  
+  /* Gaya latar belakang dan lainnya tetap sama */
+  /* Anda dapat menambahkan kode CSS tambahan di luar media query ini sesuai kebutuhan. */
+  

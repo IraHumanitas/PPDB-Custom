@@ -1,0 +1,195 @@
+::-webkit-scrollbar {
+    width: 0px; /* Lebar scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(89.96deg, rgba(190, 213, 234, 0.5) 0.04%, rgba(200, 200, 200, 0.5) 44.07%);
+    opacity: 0%;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* Warna thumb scrollbar */
+    border-radius: 10px;
+    background: linear-gradient(89.96deg, rgba(190, 213, 234, 0.5) 0.04%, rgba(200, 200, 200, 0.5) 44.07%);
+}
+
+body{
+    padding: 0%;
+    margin: 0%;
+    background-color: #F1F1F1;
+    width: 100%;
+    height: fit-content;
+}
+
+.all{
+    width: 100%;
+}
+
+.all .gambar {
+    display: flex;
+    justify-content: center; /* Pusat horizontal */
+    align-items: center; /* Pusat vertikal */
+    height: 100vh; /* Sesuaikan tinggi sesuai kebutuhan */
+}
+
+.all .gambar img {
+    max-width: 95%;
+    max-height: 95%;
+}
+
+.all .nav{
+    justify-content: space-between;
+    display: flex;
+    width: fit-content;
+    max-width: max-content;
+    margin: 2% 2% 2% 2%;
+}
+
+.nav .kiri{
+    width: 20%;
+    float: left;
+}
+
+.kiri img{
+    max-width: 75%;
+    max-height: 75%;
+}
+
+.nav .tengah{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+
+.tengah ul{
+    text-align: center; /* Pusat teks horizontal */
+    display: flex;
+        list-style: none;
+        gap: 6.5rem;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 12pt;
+        color: #6296C6;
+}
+
+.tengah ul li a{
+    font-style: normal;
+        text-decoration: none;
+        color: #6296C6;
+}
+
+.tengah ul li .beranda{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px;
+    text-align: center;
+    background: linear-gradient(265.52deg, #2C6BA7 0%, #97C3EC 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.nav .kanan{
+    width: 20%;
+    float: right;
+    display: flex;
+}
+
+.nav .kanan .teks{
+    font-family: 'Montserrat';
+    text-align: right;
+    padding-right: 6%;
+}
+
+.kanan .teks .satu{
+    font-weight: 600;
+    margin-top: -0.15%;
+    font-size: 10pt;
+    text-align: right;
+
+}
+
+.kanan .teks .dua{
+    width: 100%;
+    font-weight: 200;
+    color: #696969;
+    text-align: right;
+    margin-top: -4%;
+    font-size: 8pt;
+}
+
+.kanan img{
+    max-width: 42%;
+    max-height: 42%;
+}
+
+.all .gambar{
+    margin-top: -7%;
+}
+
+.all .biru svg{
+    z-index: -999;
+    position: relative;
+    margin-top: -20%;
+    width: 100%;
+}
+
+/* RESPONSIF */
+/* Menambahkan media query untuk perangkat seluler dengan lebar maksimum 768px */
+@media screen and (max-width: 768px) {
+    .all {
+        margin-top: 5%;
+        width: 100%;
+    }
+
+    .nav {
+        flex-direction: column; /* Ubah tata letak menjadi tumpuk vertikal di perangkat seluler */
+        align-items: center; /* Pusat vertikal */
+    }
+
+    .nav .kiri,
+    .nav .kanan {
+        width: 100%;
+        text-align: center; /* Pusat teks horizontal */
+        margin-bottom: 10px; /* Berikan ruang di antara elemen-elemen */
+    }
+
+    .nav .kiri img {
+        max-width: 50%; /* Sesuaikan ukuran gambar logo */
+        max-height: auto; /* Sesuaikan proporsi gambar logo */
+    }
+
+    .nav .kanan img {
+        max-width: 20%; /* Sesuaikan ukuran gambar logo */
+        max-height: auto; /* Sesuaikan proporsi gambar logo */
+    }
+
+    .tengah ul {
+        justify-content: center; /* Pusat teks horizontal */
+        gap: 4rem; /* Sesuaikan ruang antara elemen navigasi */
+    }
+
+    .kanan{
+        opacity: 0%;
+    }
+
+    .kanan .teks .dua {
+        margin-top: -2%; /* Sesuaikan margin atas teks dua */
+    }
+
+    .all .gambar img {
+        max-width: 100%; /* Sesuaikan gambar agar sesuai lebar layar */
+        max-height: auto; /* Sesuaikan proporsi gambar */
+        margin-top: -60%;
+    }
+
+    .all .biru svg {
+        margin-top: -175%; /* Sesuaikan margin atas SVG */
+    }
+}
+
+
+
+
